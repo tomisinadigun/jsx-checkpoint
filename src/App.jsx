@@ -6,7 +6,7 @@ import Description from './components/Description'
 
 
 function App() {
-
+  const myName = "Oluwatomisin";
   return (
     <>
       <div className="product-card">
@@ -15,6 +15,7 @@ function App() {
         <Description />
         <Price />
       </div>
+      <div>{myName.length !== 0 ? myName : <img alt='my Image' />}</div>
     </>
   )
 }
